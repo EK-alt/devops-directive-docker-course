@@ -51,4 +51,4 @@ jobs:
           ignore-unfixed: true
           vuln-type: 'os,library'
           severity: 'CRITICAL'
-          trivy-options: '--ignorefile /app/.trivyignore'
+          # trivy-options: '--ignorefile /app/.trivyignore'
