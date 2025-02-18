@@ -1,2 +1,2 @@
 # Ignore specific vulnerabilities
-image CVE-2024-37371 "Vulnerability is in a library we don't control and has been reported to the maintainers."
+CVE-2024-37371
