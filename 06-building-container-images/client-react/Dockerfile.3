@@ -13,5 +13,6 @@ RUN --mount=type=cache,target=/usr/src/app/.npm \
   npm install
 
 COPY . .
+COPY .trivyignore /usr/src/app/.trivyignore
 
 CMD ["npm", "run", "dev"]
