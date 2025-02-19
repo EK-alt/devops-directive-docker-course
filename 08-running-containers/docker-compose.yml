@@ -11,20 +11,20 @@ services:
       - frontend
     ports:
       - 5173:5173
-  client-react-nginx:
-    labels:
-      shipyard.primary-route: true
-      shipyard.route: '/'
-    image: client-react-nginx
-    build:
-      context: ../05-example-web-application/client-react/
-      dockerfile: ../../06-building-container-images/client-react/Dockerfile.5
-    init: true
-    networks:
-      - frontend
-    ports:
-      - 80:8080
-    restart: unless-stopped
+  # client-react-nginx:
+  #   labels:
+  #     shipyard.primary-route: true
+  #     shipyard.route: '/'
+  #   image: client-react-nginx
+  #   build:
+  #     context: ../05-example-web-application/client-react/
+  #     dockerfile: ../../06-building-container-images/client-react/Dockerfile.5
+  #   init: true
+  #   networks:
+  #     - frontend
+  #   ports:
+  #     - 80:8080
+  #   restart: unless-stopped
   api-node:
     labels:
       shipyard.route: '/api/node/'
